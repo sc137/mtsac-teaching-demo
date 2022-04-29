@@ -55,15 +55,193 @@
 Training</a></li>
 </ul>
 </section>
+<section id="compare-ipv4-and-ipv6" class="slide level1">
+<h1>Compare IPv4 and IPv6</h1>
+<ul>
+<li>IP = Internet Protocol</li>
+<li>v4 = Version 4</li>
+<li>v6 = Version 6</li>
+</ul>
+</section>
+<section id="section-2" class="slide level1">
+<h1></h1>
+<p>The Internet Protocol Version 6 Draft standard was completed in
+December 1998 (RFC 2460)</p>
+<ul>
+<li><em>RFC = Request for Comment</em></li>
+</ul>
+</section>
+<section id="was-a-long-time-ago" class="slide level1">
+<h1>1998 Was A Long Time Ago…</h1>
+<ul>
+<li>Movie: Saving Private Ryan</li>
+<li>#1 singer: Madonna</li>
+<li>Google was formed 9/4/98</li>
+<li>The first iMac</li>
+</ul>
+</section>
+<section id="section-3" class="slide level1">
+<h1></h1>
+<p><img data-src="img/1998.png" /></p>
+</section>
+<section id="why-now" class="slide level1">
+<h1>Why Now?</h1>
+<ul>
+<li>American Registry for Internet Numbers (ARIN) ran out of IPv4
+addresses on 9/24/2015</li>
+</ul>
+</section>
+<section id="primary-differences-between-4-and-6" class="slide level1">
+<h1>Primary Differences Between 4 and 6</h1>
+<ul>
+<li>Address size</li>
+<li>Address formatting</li>
+<li>IPv4 - Private Address Space (RFC 1918) is gone in v6</li>
+<li>IPv4 - Broadcast is gone in v6</li>
+</ul>
+</section>
+<section id="address-size" class="slide level1">
+<h1>Address Size</h1>
+<ul>
+<li>IPv4 uses a 32-bit address
+<ul>
+<li>2^32 addresses (about 4 billion addresses)</li>
+<li>192.168.100.27</li>
+</ul></li>
+<li>IPv6 uses a 128-bit address
+<ul>
+<li>2^128 addresses (about 34 Undecillion)</li>
+<li>2603:8000:8803:f24:c6d:94fd:b8f0:a9a8</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-4" class="slide level1">
+<h1></h1>
+<p>34 Trillion, Trillion, Trillion addresses</p>
+</section>
+<section id="section-5" class="slide level1">
+<h1></h1>
+<p><img data-src="img/calc-128.gif" /></p>
+</section>
+<section id="address-format" class="slide level1">
+<h1>Address Format</h1>
+<ul>
+<li>An IPv4 address is represented as 4 groups of 3 decimal digits
+(dotted quad)</li>
+<li>An IPv6 address is represented as eight groups of four hexadecimal
+digits</li>
+</ul>
+</section>
+<section id="section-6" class="slide level1">
+<h1></h1>
+<p><img data-src="img/ipv6-anatomy.png" /></p>
+</section>
+<section id="ipv6-security" class="slide level1">
+<h1>IPv6 Security</h1>
+<ul>
+<li>IPv6 has <a
+href="https://www.redhat.com/sysadmin/ipv6-packets-and-ipsec">integrated
+packet encryption</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IPsec">Internet Protocol
+Security</a> (IPsec)</li>
+</ul>
+</section>
+<section id="ipv6-subnetting" class="slide level1">
+<h1>IPv6 Subnetting</h1>
+<ul>
+<li>The standard subnet is a /64</li>
+<li>2^64 addressses (18.4 quintillion)</li>
+<li>Classless (it’s all /64)</li>
+<li>IPv4 Subnet mask replaced with IPv6 Prefix Length</li>
+</ul>
+</section>
+<section id="section-7" class="slide level1">
+<h1></h1>
+<p><img data-src="img/calc-64.gif" /></p>
+</section>
+<section id="gone-are-the-days" class="slide level1">
+<h1>Gone are the days…</h1>
+<ul>
+<li>Subnet start / end addresses</li>
+<li>Specifying usable addresses</li>
+<li>Null route</li>
+<li>Broadcast address</li>
+</ul>
+</section>
+<section id="section-8" class="slide level1">
+<h1></h1>
+<p><img data-src="img/subnets-1.png" /></p>
+</section>
+<section id="section-9" class="slide level1">
+<h1></h1>
+<p><img data-src="img/subnets-2.png" /></p>
+</section>
+<section id="ipv6-broadcast-multicast" class="slide level1">
+<h1>IPv6 Broadcast / Multicast</h1>
+<ul>
+<li>IPv6 uses multicast and special addresses to send to the entire
+segment</li>
+<li>Link-local ff02::1 is analogous to 224.0.0.1</li>
+<li>No broadcast in IPv6</li>
+<li>Neighbor Discovery Protocol (NDP)</li>
+<li>Multicast addresses begin with FF00::/8</li>
+</ul>
+</section>
+<section id="section-10" class="slide level1">
+<h1></h1>
+<p>IPv6 restores true peer-to-peer connectivity originally in place with
+IPv4 making proper firewall controls even more important.</p>
+</section>
+<section id="ipv6-public-private" class="slide level1">
+<h1>IPv6 Public / Private</h1>
+<ul>
+<li>All IPv6 packets are routed without Network Address Transaltion
+(NAT)</li>
+<li>Endpoints can have multiple IPv6 primary addresses</li>
+<li>IPv6 has no private address space (e.g. RFC 1918)</li>
+<li>Entire IPv6 address space, globally, begins with 2001:</li>
+</ul>
+</section>
+<section id="section-11" class="slide level1">
+<h1></h1>
+<p><img data-src="img/ipv6-windows.png" /></p>
+</section>
+<section id="ipv6-public-private-1" class="slide level1">
+<h1>IPv6 Public / Private</h1>
+<ul>
+<li>Unique local private address (not routed outside)
+<ul>
+<li>FD00::/8</li>
+</ul></li>
+<li>IPv6 Link Local addresses begin with FE80::/10
+<ul>
+<li>IPv4 Automatic Private IP Addressing (APIPA) 169.254.0.0</li>
+</ul></li>
+</ul>
+</section>
+<section id="wrapping-it-up" class="slide level1">
+<h1>Wrapping it Up</h1>
+<p>IPv6 is different from IPv4 in many ways, but it’s still the Internet
+Protocol and provides a reliable solution for the foreseeable
+future.</p>
+</section>
+<section id="handouts" class="slide level1">
+<h1>Handouts</h1>
+<ul>
+<li><a href="handouts/IPv6.pdf">IPv6 One Pager</a></li>
+<li><a href="handouts/ipv6_cheat_sheet.pdf">IPv6 Cheat Sheet</a></li>
+</ul>
+</section>
 <section id="questions" class="slide level1">
 <h1>Questions?</h1>
 </section>
 <section id="thank-you" class="slide level1">
 <h1>Thank You</h1>
 </section>
-<section id="section-2" class="slide level1">
+<section id="section-12" class="slide level1">
 <h1></h1>
-<p><a href="">source code available on github</a></p>
+<p><a href="https://github.com/sc137/mtsac-teaching-demo">source code
+available on github</a></p>
 </section>
     </div>
   </div>
