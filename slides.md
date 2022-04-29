@@ -133,7 +133,7 @@ The Internet Protocol Version 6 Draft standard was completed in December 1998 (R
 
 #
 
-![](img/ipv6-windows.png)
+![](img/IPv6-windows.png)
 
 # IPv6 Public / Private
 
