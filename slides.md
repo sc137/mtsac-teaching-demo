@@ -58,11 +58,11 @@ The Internet Protocol Version 6 Draft standard was completed in December 1998 (R
 # Address Size
 
 * IPv4 uses a 32-bit address
-    * 2^32 addresses (about 4 billion addresses)
+    * 2^32 addresses (about 4 billion)
     * 192.168.100.27
 
 * IPv6 uses a 128-bit address
-    * 2^128 addresses (about 34 Undecillion)
+    * 2^128 addresses (about 34 undecillion)
     * 2603:8000:8803:f24:c6d:94fd:b8f0:a9a8
 
 
@@ -92,7 +92,7 @@ The Internet Protocol Version 6 Draft standard was completed in December 1998 (R
 * The standard subnet is a /64
 * 2^64 addressses (18.4 quintillion)
 * Classless (it's all /64)
-* IPv4 Subnet mask replaced with IPv6 Prefix Length
+* IPv4 subnet mask replaced with IPv6 Prefix Length
 
 #
 ![](img/calc-64.gif)
@@ -114,18 +114,19 @@ The Internet Protocol Version 6 Draft standard was completed in December 1998 (R
 # IPv6 Broadcast / Multicast
 
 * IPv6 uses multicast and special addresses to send to the entire segment
-* Link-local ff02::1 is analogous to 224.0.0.1
+* Link-local FF02::1 is analogous to 224.0.0.1
 * No broadcast in IPv6
 * Neighbor Discovery Protocol (NDP)
 * Multicast addresses begin with FF00::/8
 
 #
 
-IPv6 restores true peer-to-peer connectivity originally in place with IPv4 making proper firewall controls even more important.
+*IPv6 restores true peer-to-peer connectivity originally in place with IPv4 making proper firewall controls even more important.*
+
 
 # IPv6 Public / Private
 
-* All IPv6 packets are routed without Network Address Transaltion (NAT)
+* All IPv6 packets are routed without Network Address Translation (NAT)
 * Endpoints can have multiple IPv6 primary addresses
 * IPv6 has no private address space (e.g. RFC 1918)
 * Entire IPv6 address space, globally, begins with 2001:
